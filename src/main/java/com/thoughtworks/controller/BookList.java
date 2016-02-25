@@ -38,11 +38,11 @@ public class BookList {
 
         return modelAndView;
     }
-    @RequestMapping("successsubmit")
-    public ModelAndView successsubmit(){
-        ModelAndView modelAndView = new ModelAndView("successsubmit");
-
-
-        return modelAndView;
-    }
+//    @RequestMapping("successsubmit")
+//    public ModelAndView successsubmit(){
+//        ModelAndView modelAndView = new ModelAndView("successsubmit");
+//
+//
+//        return modelAndView;
+//    }
 }

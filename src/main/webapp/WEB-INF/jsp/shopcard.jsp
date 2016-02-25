@@ -18,7 +18,8 @@
     <link rel="stylesheet" type="text/css" href="css/shopcard.css" media="all"/>
 </head>
 <body ng-controller="mainController" id='book'>
-<h4 id="shopcard"><p>总价:</p>{{bookprice}}元<br><br><a href="successsubmit.do">提交</a></h4>
+<h1 id="success"></h1>
+<h4 id="shopcard"><p>总价:</p><p id="totalprice">{{bookprice}}元</p><br><br><a  href="" id="btn1">提交</a></h4>
 
 <%
 int temp=Integer.parseInt(request.getParameter("id"))/10;
@@ -42,6 +43,15 @@ int temp=Integer.parseInt(request.getParameter("id"))/10;
 
     </li>
 </ul>
-
 </body>
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            var totalprice=$("#totalprice").text();
+            $("#shopcard").hide();
+            $("#success").text("购买成功,总价:"+totalprice);
+            $("button").hide();
+        });
+    });
+</script>
 </html>
