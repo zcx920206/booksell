@@ -1,0 +1,47 @@
+body{
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+body ul {
+	padding: 0;
+	list-style-type: none;
+}
+body h5{
+	display: none;
+}
+#book .book-detail{
+	background-color: #3766aa;
+	color: white;
+	font-size: 20px;
+	width: 600px;
+	padding: 10px;
+	position: relative;
+	margin-bottom: 5em;
+	left:500px;
+}
+#book .book-detail:after{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 100%;
+	border-top: none;
+	border-right: none;
+	border-bottom: solid 1em transparent;
+	border-left: solid 1em black;
+}
+#booklist{
+	position: relative;
+     padding-left: 250px;
+	padding-top: 50px;
+}
+#book img{position: absolute;padding-top: 10px;}
+#book p{
+	font-size: 10px;
+	text-align: center;
+
+}
+
+
