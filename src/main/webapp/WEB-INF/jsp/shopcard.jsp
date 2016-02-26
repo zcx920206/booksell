@@ -48,8 +48,8 @@ int temp=Integer.parseInt(request.getParameter("id"))/10;
     $(document).ready(function(){
         $("#btn1").click(function(){
             var totalprice=$("#totalprice").text();
-            $("#shopcard").hide();
             $("#success").text("购买成功,总价:"+totalprice);
+            $("#shopcard").hide();
             $("button").hide();
         });
     });
