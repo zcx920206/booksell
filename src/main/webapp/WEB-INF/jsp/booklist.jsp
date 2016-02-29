@@ -47,6 +47,7 @@
             <span>{{book.pubdate}}</span>
             </p>
               <button ng-click="countAdd(book.id)" id="testshop">加入购物车</button>
+              <button ng-click="countdelete(book.id)" id="testdelete">删除</button>
           </div>
 
       </li>

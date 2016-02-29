@@ -38,6 +38,7 @@ int temp=Integer.parseInt(request.getParameter("id"))/10;
                 <span>{{book.price}}</span>
                  <p >数目:{{book.count}}</p>
                 <button ng-click="add(book.key)">+</button><button ng-click="sub(book.key)">-</button>
+
             </p>
         </div>
 

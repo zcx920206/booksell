@@ -11,6 +11,12 @@
           book = _.where(data.books, {id: bookid});
           $scope.updateShopcard(book[0], 1);
       };
+      $scope.countdelete = function(bookid){
+          book = _.where(data.books, {id: bookid});
+          var count= _.indexOf(data.books,book[0]);
+          data.books=_.without(data.books,book[0]);
+          $scope.booksFiltered=data.books;
+      };
       $scope.updateShopcard = function(book, num){
           shopcardBook = _.where($scope.shopcard, {id: book.id});
           if(shopcardBook && shopcardBook.length > 0){
