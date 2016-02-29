@@ -33,7 +33,6 @@
                 $.each($scope.booksFiltered, function(n,value){
                     $scope.booksFiltered[n].key = n;
                 });
-
             }else{
                 $scope.booksFiltered[key].count--;
             }
